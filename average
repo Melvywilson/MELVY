@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class avg
+{
+public static void main(String[] args)
+{
+String a;
+int b,c,d,sum,avg;sum=0;avg=0;
+Scanner name=new Scanner(System.in);
+System.out.println("Enter the name of the student");
+a=name.nextLine();
+System.out.println("Enter the marks");
+b=name.nextInt();
+c=name.nextInt();
+d=name.nextInt();
+sum=d+b+c;
+avg=sum/3;
+System.out.println("Thesum is "+sum);
+System.out.println("The avg is "+avg);
+if(avg>=90)
+System.out.println("first class");
+if((avg>=80)&&(avg<90))
+System.out.println("second class");
+if((avg>=70)&&(avg<80))
+System.out.println("third class");
+if(avg<50)
+System.out.println("fail");
+}
+}
