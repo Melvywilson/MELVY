@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class factorial
+{
+public static void main(String[] args)
+{
+int a,i,f=1;
+Scanner nam=new Scanner(System.in);
+System.out.println("Enter the no:");
+a=nam.nextInt();
+for(i=1;i<=a;i++)
+f=f*i;
+System.out.println("The factorial is"+f);
+}
+}
