@@ -1,0 +1,16 @@
+package basicjava;
+@FunctionalInterface
+interface MyFunctionalInterface{
+	public String sayHello(String n);
+}
+public class lamda {
+	public static void main(String args[])
+	{
+		MyFunctionalInterface msg=(st) ->
+		{
+			return st;
+		};
+		System.out.println(msg.sayHello("melvy"));
+	}
+
+}
