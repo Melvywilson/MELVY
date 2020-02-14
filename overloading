@@ -1,0 +1,22 @@
+package basicjava;
+
+ class execute {
+	 void display(float w)
+	 {
+		 System.out.println("hello");
+	 }
+	 void display(int a)
+	 {
+		 System.out.println("world");
+		 
+	 }
+	}
+ class overloading
+ {
+	 public static void main(String args[])
+	 {
+		 execute obj=new execute();
+		 obj.display(8.0f);
+		 
+	 }
+ }
