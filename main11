@@ -1,0 +1,39 @@
+package basicjava;
+
+import java.util.Scanner;
+class usermaincode11{
+	static String encrypt(String a)
+	{
+		
+		int l,m;
+		char n;
+		String s="";
+	l=a.length();
+	for(int i=0;i<l;i++)
+	{
+	if(i%2==0) {	
+	m=(int)(a.charAt(i));
+	n=(char)(m+1);
+	s=s+n;
+	}
+	else
+	{
+	s=s+(a.charAt(i));
+	}
+	}
+	return s;
+	}
+}
+public class main11 {
+	public static void main(String args[])
+	{
+		String s,b;
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the string");
+		s=sc.next();
+		b=usermaincode11.encrypt(s);
+		System.out.println("the string is "+b);
+	}
+
+}
