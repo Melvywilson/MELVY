@@ -1,0 +1,28 @@
+package basicjava;
+import java.util.*;
+class name{
+	static  int squareofevendigits(int a)
+	{
+		int d,s=0;
+	while(a>0)
+		{
+		d=a%10;
+		if(d%2==0)
+			s=s+(d*d);
+		a=a/10;
+		}
+	return s;
+	}
+}
+public class main3 {
+	public static void main(String args[])
+{
+		int n,b;
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the number");
+n=sc.nextInt();
+b=name.squareofevendigits(n);
+System.out.println("the sum is"+b);
+}
+
+}
