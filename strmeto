@@ -1,0 +1,19 @@
+package basicjava;
+
+public class strmeto {
+	
+	public static void main(String args[]) {
+		String name1="melvy";
+		String name2="wilson";
+		System.out.println(name1.equals(name2));
+		System.out.println(name1.charAt(3));
+		System.out.println(name1.concat(name2));
+		System.out.println(name1.indexOf('y'));
+		System.out.println(name1.lastIndexOf('m'));
+		System.out.println(name1.length());
+		System.out.println(name1.replace("mel", "lll"));
+	}
+	
+	
+
+}
