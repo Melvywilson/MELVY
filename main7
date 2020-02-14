@@ -1,0 +1,27 @@
+package basicjava;
+import java.util.*;
+class usermaincode7{
+	static int reversenumber(int s)
+	{
+		int d,r=0;
+	while(s>0)
+	{
+		d=s%10;
+		r=(r*10)+d;
+		s=s/10;
+	}
+	return r;
+	}
+}
+public class main7 {
+	public static void main(String args[])
+	{
+		int n,b;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number");
+		n=sc.nextInt();
+		b=usermaincode7.reversenumber(n);
+	System.out.println("the reverse is"+b);	
+	}
+
+}
