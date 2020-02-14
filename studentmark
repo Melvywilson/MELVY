@@ -1,0 +1,29 @@
+package basicjava;
+import java.util.Scanner;
+public class studentmark {
+	
+	public static void main(String args[])
+	{
+		String nam;
+		int total=0;
+		int a[];
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the name"); 
+		nam=sc.next();
+		System.out.println("enter no. of subjects");
+		int n=sc.nextInt();
+		 a=new int[n];
+		System.out.println("the marks are");
+		for(int i=0;i<n;i++)
+			a[i]=sc.nextInt();
+		for(int i=0;i<n;i++)
+		 total=total+a[i];
+		System.out.println("the name of student: "+nam);
+		System.out.println("the total is "+total);
+		System.out.println("the subject marks are");
+		for(int j=0;j<n;j++)
+			System.out.println(a[j]);
+		
+	}
+
+}
