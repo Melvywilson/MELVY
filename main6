@@ -1,0 +1,31 @@
+package basicjava;
+import java.util.*;
+class usermaincode6
+{
+	static String formnewword(String a,int b)
+	{
+		int l,u;
+		String t,r,s;
+	l=a.length();
+	u=l-b;
+	t=a.substring(0,b);	
+	r=a.substring(u,l);
+	s=t+r;
+	return s;
+	}
+}
+
+public class main6 {
+	public static void main(String args[])
+	{
+		String s,b;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the string");
+		s=sc.next();
+		System.out.println("enter the no.");
+		 int n=sc.nextInt();
+		b=usermaincode6.formnewword(s,n);
+		System.out.println("the string is "+b);
+	}
+
+}
