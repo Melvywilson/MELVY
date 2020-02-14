@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class searchlinear
+{
+public static void main(String[] args)
+{
+int a,b,c=0,i;
+Scanner nam=new Scanner(System.in);
+System.out.println("Enter the array size");
+a=nam.nextInt();
+int[] arr=new int[a];
+System.out.println("Enter the no. to be searched");
+b=nam.nextInt();
+System.out.println("Enter array elements");
+for(i=0;i<a;i++)
+arr[i]=nam.nextInt();
+for(i=0;i<a;i++)
+{
+if(arr[i]==b)
+c=1;
+}
+System.out.println("The array is;");
+for(i=0;i<a;i++)
+System.out.println(arr[i]);
+if(c==1)
+System.out.println("Found the no.");
+else
+System.out.println("NO. not found");
+}
+}
