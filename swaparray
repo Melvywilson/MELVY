@@ -1,0 +1,46 @@
+import java.util.*;
+class swaparray
+{
+public static void main(String args[])
+{
+int first,second,i,temp;
+Scanner nam=new Scanner(System.in);
+System.out.println("Enter no.of elements in first array");
+first=nam.nextInt();
+System.out.println("Enter no.of elements in second array");
+second=nam.nextInt();
+if(first>=1)
+{
+   int[] one=new int[first];
+   System.out.println("Enter elements in first array");
+   for(i=0;i<first;i++)
+   one[i]=nam.nextInt();
+
+	if(second>=1)
+	{    
+     		if(first==second)
+     		{
+      			int[] two=new int[second];
+                         System.out.println("Enter elements in second array");
+      			for(i=0;i<second;i++)
+     				two[i]=nam.nextInt();
+     			 for(i=0;i<second;i++)
+      			{
+       				temp=two[i];
+       				two[i]=one[i];
+      				one[i]=temp;
+      			}
+      		}	
+    		 else
+     		System.out.println("Cannot swap as the size is not same");
+	}
+
+	System.out.println("the swapped first array is");
+	for(i=0;i<first;i++)
+		System.out.println(one[i]);
+}
+}
+
+}      
+
+
