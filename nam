@@ -1,0 +1,17 @@
+package basicjava;
+import java.util.*;
+public class nam {
+	public static void main(String args[])
+	{
+		List<String> list=new ArrayList<String>();
+		list.add("melvy");
+		list.add("wilson");
+		list.add("donn");
+		list.add("mary");
+		list.add("thangu");
+		list.forEach((names)->{System.out.println(names);}
+		);
+	}
+	
+
+}
