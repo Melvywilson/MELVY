@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class sumprime
+{
+public static void main(String[] args)
+{
+int a,b,i,j,c,sum=0;
+Scanner name=new Scanner(System.in);
+System.out.println("Enter range of no.s ");
+a=name.nextInt();
+b=name.nextInt();
+for(i=a;i<=b;i++)
+     {
+       if(i!=1)
+         {
+          c=0;
+          for(j=2;j<i;j++)
+           {
+           if(i%j==0)
+           c=1;
+          }
+        if(c==0)
+        sum=sum+i;
+    }
+}
+System.out.println("The sum of prime no.s is "+sum);
+}
+}
+        
