@@ -1,0 +1,39 @@
+package basicjava;
+import java.sql.*;
+ class jdbc1 {
+	 public static void main(String args[])throws SQLException
+	 {
+		 Connection con=null;
+		 PreparedStatement ps=null;
+		 try {
+			 Class.forName("com.mysql.jdbc.Driver");
+			 con=DriverManager.getConnection("jdbc:mysql://localhost:3306/new","root","root");
+			 System.out.println("Connected");
+			 ps=con.prepareStatement("delete from dept where dname like 'market'");
+			
+			 ps.executeUpdate();
+			 ps.close();
+			 ps=con.prepareStatement("select * from dept");
+			 		
+			 ResultSet rs=ps.executeQuery();
+			 while(rs.next()) 
+			 {
+				 System.out.println(rs.getInt("dno"));
+				 System.out.println(rs.getString("dname"));
+			 }
+		 
+		 }
+		 catch(ClassNotFoundException se)
+		 {
+			 System.out.println(se);
+		 }
+		 finally {
+			 con.setAutoCommit(false);
+			 con.commit();
+			 }
+		 }
+	 }
+	 
+	 
+
+
