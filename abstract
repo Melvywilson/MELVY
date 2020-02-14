@@ -1,0 +1,32 @@
+package basicjava;
+
+abstract class Animal {
+	abstract void eat();
+}
+abstract class Tiger extends Animal
+{
+//	void eat()
+//	{
+//		System.out.println("i eat non veg");
+//	}
+}
+class Goat extends Animal
+{
+	void eat()
+	{
+		System.out.println("i eat only veg");
+	}
+}
+class abss
+{
+	public static void main(String args[])
+	{
+		Animal m;
+		m=new Tiger();
+		m.eat();
+		m=new Goat();
+		m.eat();
+	
+	}
+
+}
