@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class recursion
+{
+public static void main(String[] args)
+{
+int a,b;
+Scanner nam=new Scanner(System.in);
+System.out.println("Enter the no.");
+a=nam.nextInt();
+recursion s=new recursion();
+b=s.fact(a);
+System.out.println("The factorial is:"+b);
+}
+int fact(int n)
+{
+if(n!=1)
+return n*fact(n-1);
+else
+return 1;
+}
+}
