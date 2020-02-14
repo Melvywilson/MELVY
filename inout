@@ -1,0 +1,22 @@
+package basicjava;
+import java.io.*;
+
+public class inout {
+	public static void main(String st[])throws Exception{
+		String s="pwl.java";
+		String s1="pw2.java";
+		int i;
+		FileInputStream fis=new FileInputStream(s1);
+		FileOutputStream bw=new FileOutputStream(s,false);
+		fis.skip(19);
+		while((i=fis.read())!=-1)
+{
+			bw.flush();
+			bw.write(i);
+}
+			bw.close();fis.close();
+	
+
+	}
+
+}
