@@ -1,0 +1,41 @@
+import com.example.tax;
+class TaxCalculator
+{
+float basicsalary,tax;
+boolean citizenship;
+int netsalary;
+ void calculateTax(basicsalary)
+{
+ tax=(30*basicsalary)/100;
+System.out.println("The tax of employee for "+basicsalary+ "is"+tax);
+}
+void deductTax()
+{
+netsalary=(int)(basicsalary-tax);
+System.out.println("The net salary of employee is"+netsalary);
+}
+ void validatesalary(citizenship)
+{
+if((basicsalary>100000)&&(citizenship==true))
+System.out.println("the salary and citizenship eligibility:true");
+else
+System.out.println("the salary and citizenship eligibility:false");
+}
+}
+class EmployeeTax
+{
+boolean citizenship;
+float basicsalary;
+public static void main(String args[])
+{
+citizenship=true;
+basicsalary=25000;
+EmployeeTax TaxCalculator=new TaxCalculator();
+TaxCalculator.calculateTax(25000);
+TaxCalculator.deductTax();
+TaxCalculator.validatesalary(true);
+}
+}
+
+
+
