@@ -1,0 +1,11 @@
+class wholepart
+{
+public static void main(String[] args)
+{
+double a,b,d=13.36;
+a=d%1;
+b=d-a;
+System.out.println("The fractional value is"+a);
+System.out.println("The whole value is"+b);
+}
+}
