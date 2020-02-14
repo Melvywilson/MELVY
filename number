@@ -1,0 +1,12 @@
+class number
+{
+public static void main(String[] args)
+{
+int a,b;a=8;
+b=(a%2==0)? 1:0;
+if(b==1)
+System.out.println("The number is even");
+else
+System.out.println("The number is odd");
+}
+}
