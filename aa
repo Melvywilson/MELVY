@@ -1,0 +1,25 @@
+package basicjava;
+
+class a {
+	int x=1000;
+	//a()
+	//{
+		//System.out.println("A");
+	//}
+}
+	class bb extends a{
+		bb()
+		{
+			System.out.println("B");
+			
+		}
+	}
+	public class aa
+	{
+		public static void main(String args[])
+		{
+			a obj=new a();
+		}
+	}
+
+
