@@ -1,0 +1,32 @@
+package basicjava;
+import java.util.*;
+class usermain5
+{
+	static int checkcharacterspresent(String a)
+	{
+		int l;
+	l=a.length();
+	if(a.charAt(0)==(a.charAt(l-1)))
+			return 1;
+	else
+		return -1;
+			
+	}
+}
+public class main5 {
+	public static void main(String args[])
+	{
+		String s;
+		int b;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the sring");
+		s=sc.next();
+		b=usermain5.checkcharacterspresent(s);
+		if(b==1)
+			System.out.println("string is valid");
+		else
+			System.out.println("string is invalid");
+		
+	}
+
+}
