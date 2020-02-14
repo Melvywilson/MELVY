@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class passfailcount
+{
+public static void main(String[] args)
+{
+int num,i,pass,fail;pass=0;fail=0;
+Scanner name=new Scanner(System.in);
+System.out.println("Enter the no. of subjects");
+num=name.nextInt();
+if((num>0)&&(num<20))
+{
+int[] mark=new int[num];
+for(i=0;i<num;i++)
+{
+mark[i]=name.nextInt();
+if(mark[i]<50)
+fail++;
+else
+pass++;
+}
+if(fail==0)
+{
+System.out.println("Passed in all subject");
+}
+else if(fail==num)
+{
+System.out.println("Failed in all the subject");
+}
+else
+{
+System.out.println("Passed in "+pass+"subjects and failed in "+fail+"subjects");
+}
+}
+else
+System.out.println("Invalid input");
+}
+}
+
+
+
