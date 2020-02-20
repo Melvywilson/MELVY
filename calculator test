@@ -1,0 +1,21 @@
+package tk_serv;
+
+import static org.junit.Assert.*;
+
+
+import org.junit.Test;
+import org.junit.runner.JUnitCore;
+import junit.framework.TestCase;
+public class calculatorTest extends TestCase {
+	public calculatorTest() {
+		super();
+	}
+
+	@Test
+	public void testFact() {
+		calculator cal=new calculator();
+		assertEquals(120,cal.factorial(5));
+		
+	}
+
+}
