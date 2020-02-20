@@ -1,0 +1,21 @@
+package tk_serv;
+
+public class measurement {
+private int value;
+public measurement(int m)
+{
+	value=m;
+}
+public int getValue()
+{
+	return value;
+}
+public void add(measurement m)
+{
+	value=value+m.getValue();
+}
+public void subtract(measurement m)
+{
+	value=value-m.getValue();
+}
+}
